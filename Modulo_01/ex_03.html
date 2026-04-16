@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 03 - Formulário</title>
+</head>
+
+<body>
+
+    <h1>Formulário de Matrícula - FATEC</h1>
+
+    <form action="ex_04.html" method="get">
+
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label>Nome completo:</label><br>
+            <input type="text" name="nome" required minlength="5"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label>Data de nascimento:</label><br>
+            <input type="date" name="nascimento"><br><br>
+
+            <label>CPF:</label><br>
+            <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00"><br><br>
+
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Dados Acadêmicos</legend>
+
+            <label>Curso:</label><br>
+            <select name="curso">
+                <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                <option value="logistica">Logística</option>
+                <option value="gestao">Gestão Empresarial</option>
+            </select><br><br>
+
+            <label>Período:</label><br>
+            <input type="radio" name="periodo" value="manha"> Manhã<br>
+            <input type="radio" name="periodo" value="noite"> Noite<br><br>
+
+            <label>
+                <input type="checkbox" name="experiencia"> Já programou antes?
+            </label><br><br>
+
+        </fieldset>
+
+        <label>Observações:</label><br>
+        <textarea name="observacoes" rows="4" cols="40"></textarea><br><br>
+
+        <label>Upload de foto:</label><br>
+        <input type="file" name="foto"><br><br>
+
+        <label>Cor favorita:</label><br>
+        <input type="color" name="cor"><br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <hr>
+
+    <nav>
+        <a href="ex_01.html">ex 01</a> |
+        <a href="ex_02.html">ex 02</a> |
+        <a href="ex_03.html">ex 03</a>
+    </nav>
+
+</body>
+</html>
