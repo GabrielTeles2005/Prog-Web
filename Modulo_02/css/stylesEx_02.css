@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+section {
+  background: #1e293b;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+h2 {
+  color: #38bdf8;
+}
+
+.card {
+  background: #334155;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.aprovado {
+  border-left: 5px solid #22c55e;
+}
+
+.reprovado {
+  border-left: 5px solid #ef4444;
+}
